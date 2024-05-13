@@ -1,0 +1,7 @@
+node_modules
+.env
+liquibase.properties
+*.js
+*.map
+.yarn
+liquibase.properties copy.template

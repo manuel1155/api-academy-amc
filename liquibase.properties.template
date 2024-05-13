@@ -1,0 +1,5 @@
+changeLogFile: dbchangelog.xml
+url: jdbc:mysql://hr-connect-devtest.cluster-cp1yddu6mqda.us-west-2.rds.amazonaws.com:3306/fh_pocs_dev
+username: postgres user
+password: postgres password 
+classPath: mysql-connector-j-8.2.0.jar
