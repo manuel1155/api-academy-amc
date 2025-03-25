@@ -1,4 +1,6 @@
 import { DataSource } from 'typeorm'
+import mysql from 'mysql2/promise';
+
 
 const {
   DB_HOST: host,
@@ -19,3 +21,13 @@ export const AppDataSource = new DataSource({
   logging: false,
   entities: ["src/entities/**/*.ts"]
 })
+
+export const pool = mysql.createPool({
+  host,
+  user: username,
+  password,
+  database,
+  waitForConnections: true,
+  connectionLimit: 10,
+  queueLimit: 0,
+});
