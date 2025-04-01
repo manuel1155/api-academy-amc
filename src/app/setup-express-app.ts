@@ -26,7 +26,7 @@ const setupExpressApp = () => {
   
   let { PORT: port } = process.env
   port = port || '3001'
-  app.listen(+port, () => {
+  app.listen(+port, "0.0.0.0", () => {
     console.log(' Server is listen on port: ', port)
   })
 }
